@@ -1,0 +1,65 @@
+.wrapper {
+    --search-border-radius: 92px;
+
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    // Nếu khong có biến thì sẽ lấy mặc đinh 60px
+    height: var(--header-height, 60px);
+    box-shadow: 0px 1px 1px rgb(0 0 0 /12%);
+    background-color: var(--white);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 100%;
+    width: var(--header-container-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--default-layout-horizontal-spacer);
+}
+
+.logo {
+}
+
+.logo-link {
+    display: flex;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+}
+
+.action-btn {
+    font-size: 2.2rem;
+    color: #161823;
+    background-color: transparent;
+    padding: 4px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.more-btn {
+    font-size: 2rem;
+    margin-left: 24px;
+    background-color: transparent;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 12px;
+}
